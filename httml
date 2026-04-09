@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>موقعي الاحترافي</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        color: white;
+        text-align: center;
+      }
+
+      .container {
+        margin-top: 100px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      button {
+        padding: 12px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 25px;
+        background: white;
+        color: #333;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #333;
+        color: white;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        margin: 30px auto;
+        width: 250px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>اضغط على الزر وشوف السحر ✨</p>
+
+      <button onclick="changeText()">اضغط هنا</button>
+
+      <div class="card" id="card">
+        <h3>كارت</h3>
+        <p id="text">لسه مفيش حاجة</p>
+      </div>
+    </div>
+
+    <script>
+      function changeText() {
+        document.getElementById("text").innerText = "مبروك نت باتيده!";
+        document.getElementById("card").style.background = "rgba(0,0,0,0.5)";
+      }
+    </script>
+  </body>
+</html>
